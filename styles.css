@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
+	justify-content: center;
+	grid-template-columns: 26rem 26rem 26rem;
+    grid-template-rows: 110%;
+    padding: 7rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 0rem 0rem 0rem 4rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1.3rem;
+    padding: 1.5rem 4rem;
+    line-height: 26pt;
+}
+
+img {
+    padding: 4rem 0rem 3rem 4rem;
+}
+
+.cards button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 3px solid hsl(0, 0%, 95%);
+    padding: 13px 50px;   
+    margin: 25% 0% 0% 15%;
+}
+
+button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sedans-btn {
+    color:hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.luxury-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 1000px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 20rem;
+        position: relative;
+        max-width: 1000px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .cards button {
+        padding: 12px 25px; 
+        margin: 5% 0% 15% 15%;
+    }
+
+    .sedans {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+
+}
